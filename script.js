@@ -12,3 +12,36 @@ console.log("Hi master");
 // console.log() è nostro amico.
 // Quando un pezzo di codice funziona, chiediamoci se possiamo scomporlo in funzioni più piccole.
 // Buon lavoro! :muscolo:
+
+const team = [
+    {
+        fullName: "Wayne Barnett",
+        profession: "Founder & CEO"
+    },
+    {
+        fullName: "Angela Caroll",
+        profession: "Chief Editor"
+    },
+    {
+        fullName: "Walter Gordon",
+        profession: "Office Manager"
+    },
+    {
+        fullName: "Angela Lopez",
+        profession: "Social Media Manager"
+    },
+    {
+        fullName: "Scott Enstrada",
+        profession: "Developer"
+    },
+    {
+        fullName: "Barbara Ramos",
+        profession: "Graphic Designer"
+    }
+];
+
+console.log(team);
+
+const teamSectionHtml = document.querySelector('#team');
+console.log(teamSectionHtml);
+
