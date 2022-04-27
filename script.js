@@ -113,8 +113,11 @@ btn.addEventListener('click',()=>{
     console.log(valueimgID)
     inrTeamMmbr(valueName,valueProfession,valueimgID)
     console.log(team)//tested
-
-    if(valueimgID === " "){
+    if(valueName === ""){
+        alert("devi inserire un Nome e Cognome");
+    }else if(valueProfession === ""){
+        alert("Devi inserire una professione")
+    }else if(valueimgID === " "){
 
         teamSectionHtml.innerHTML += 
         `
