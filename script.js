@@ -13,35 +13,70 @@ console.log("Hi master");
 // Quando un pezzo di codice funziona, chiediamoci se possiamo scomporlo in funzioni più piccole.
 // Buon lavoro! :muscolo:
 
+
+//creat team array object
 const team = [
     {
         fullName: "Wayne Barnett",
-        profession: "Founder & CEO"
+        profession: "Founder & CEO",
+        imgID: "wayne-barnett-founder-ceo.jpg"
     },
     {
         fullName: "Angela Caroll",
-        profession: "Chief Editor"
+        profession: "Chief Editor",
+        imgID: "angela-caroll-chief-editor.jpg"
     },
     {
         fullName: "Walter Gordon",
-        profession: "Office Manager"
+        profession: "Office Manager",
+        imgID: "walter-gordon-office-manager.jpg"
     },
     {
         fullName: "Angela Lopez",
-        profession: "Social Media Manager"
+        profession: "Social Media Manager",
+        imgID: "angela-lopez-social-media-manager.jpg"
     },
     {
         fullName: "Scott Enstrada",
-        profession: "Developer"
+        profession: "Developer",
+        imgID: "wayne-barnett-founder-ceo.jpg"
     },
     {
         fullName: "Barbara Ramos",
-        profession: "Graphic Designer"
+        profession: "Graphic Designer",
+        imgID: "barbara-ramos-graphic-designer.jpg"
     }
 ];
-
+//test team object
 console.log(team);
 
+//get needed part html
 const teamSectionHtml = document.querySelector('#team');
-console.log(teamSectionHtml);
+console.log(teamSectionHtml);//test
+
+//insert objects from team objects into html
+for(let i in team){
+    console.log(team[i]);//test
+    teamSectionHtml.innerHTML += 
+    `
+    <div class="team-card">
+        <div class="team-card">
+            <div class="card-image">
+              <img
+                src="img/${team[i].imgID}"
+                alt="${team[i].fullName}"
+              />
+            </div>
+            <div class="card-text">
+              <h3>${team[i].fullName}</h3>
+              <p>${team[i].profession}</p>
+            </div>
+            </div>
+
+            </div>
+
+
+    
+    `;
+}
 
