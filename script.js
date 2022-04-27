@@ -39,7 +39,7 @@ const team = [
     {
         fullName: "Scott Enstrada",
         profession: "Developer",
-        imgID: "wayne-barnett-founder-ceo.jpg"
+        imgID: "scott-estrada-developer.jpg"
     },
     {
         fullName: "Barbara Ramos",
@@ -51,7 +51,7 @@ const team = [
 console.log(team);
 
 //get needed part html
-const teamSectionHtml = document.querySelector('#team');
+const teamSectionHtml = document.querySelector('.team-container');
 console.log(teamSectionHtml);//test
 
 //insert objects from team objects into html
@@ -71,9 +71,8 @@ for(let i in team){
               <h3>${team[i].fullName}</h3>
               <p>${team[i].profession}</p>
             </div>
-            </div>
-
-            </div>
+        </div>
+    </div>
 
 
     
